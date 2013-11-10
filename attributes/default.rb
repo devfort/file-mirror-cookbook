@@ -219,4 +219,12 @@ default['file_mirror']['files'] = {
     'linux' => 'http://sourceforge.net/projects/xowa/files/v0.11.0/xowa_app_linux_v0.11.0.0.zip/download',
     'linux_64' => 'http://sourceforge.net/projects/xowa/files/v0.11.0/xowa_app_linux_64_v0.11.0.0.zip/download',
   },
+  
+  'android' => {
+    # SDK, Eclipse with devtools, etc.
+    'win' => 'http://dl.google.com/android/adt/adt-bundle-windows-x86-20131030.zip',
+    'mac' => 'http://dl.google.com/android/adt/adt-bundle-mac-x86_64-20131030.zip',
+    'linux' => 'http://dl.google.com/android/adt/adt-bundle-linux-x86-20131030.zip',
+    'linux_64' => 'http://dl.google.com/android/adt/adt-bundle-linux-x86_64-20131030.zip'
+  },
 }

@@ -227,4 +227,10 @@ default['file_mirror']['files'] = {
     'linux' => 'http://dl.google.com/android/adt/adt-bundle-linux-x86-20131030.zip',
     'linux_64' => 'http://dl.google.com/android/adt/adt-bundle-linux-x86_64-20131030.zip'
   },
+  'vmware' => {
+    'win' => 'https://download3.vmware.com/software/player/file/VMware-player-6.0.1-1379776.exe',
+    'mac' => 'https://download3.vmware.com/software/fusion/file/VMware-Fusion-6.0.2-1398658-light.dmg',
+    'linux' => 'https://download3.vmware.com/software/player/file/VMware-Player-6.0.1-1379776.i386.bundle',
+    'linux_64' => 'https://download3.vmware.com/software/player/file/VMware-Player-6.0.1-1379776.x86_64.bundle'
+  },
 }

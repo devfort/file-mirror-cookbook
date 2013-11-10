@@ -138,9 +138,9 @@ default['file_mirror']['files'] = {
     'linux' => 'http://download.mozilla.org/?product=firefox-5.0.1&os=linux&lang=en-GB',
   },
   'wireshark' => {
-    'mac' => 'http://wiresharkdownloads.riverbed.com/wireshark/osx/Wireshark%201.6.1%20Intel%2064.dmg',
-    'win' => 'http://wiresharkdownloads.riverbed.com/wireshark/win32/wireshark-win32-1.6.1.exe',
-    'source' => 'http://wiresharkdownloads.riverbed.com/wireshark/src/wireshark-1.6.1.tar.bz2',
+    'mac' => 'http://wiresharkdownloads.riverbed.com/wireshark/osx/Wireshark%201.10.3%20Intel%2064.dmg',
+    'win' => 'http://wiresharkdownloads.riverbed.com/wireshark/win32/Wireshark-win32-1.10.3.exe',
+    'source' => 'http://wiresharkdownloads.riverbed.com/wireshark/src/wireshark-1.10.3.tar.bz2',
   },
   'firebug' => {
     'xpi' => 'http://getfirebug.com/releases/firebug/1.8/firebug-1.8.0.xpi',
@@ -182,8 +182,8 @@ default['file_mirror']['files'] = {
     'link-export' => 'http://download.freebase.com/datadumps/latest/freebase-datadump-quadruples.tsv.bz2',
   },
   'emacs' => {
-    'win' => 'http://ftp.gnu.org/gnu/emacs/windows/emacs-23.3-bin-i386.zip',
-    'mac' => 'http://emacsformacosx.com/emacs-builds/Emacs-23.3-universal-10.6.6.dmg',
+    'win' => 'http://ftp.gnu.org/gnu/emacs/windows/emacs-24.3-bin-i386.zip',
+    'mac' => 'http://emacsformacosx.com/emacs-builds/Emacs-24.3-universal-10.6.8.dmg',
   },
   'aquamacs' => {
     'mac' => 'http://downloads.sourceforge.net/project/aquamacs/Releases/Aquamacs-Emacs-2.3a2.dmg?r=http%3A%2F%2Faquamacs.org%2Fdownload-release.shtml&ts=1312740751&use_mirror=garr',
@@ -199,5 +199,24 @@ default['file_mirror']['files'] = {
     'mac' => 'http://google-refine.googlecode.com/files/google-refine-2.1-r2136.dmg',
     'win' => 'http://google-refine.googlecode.com/files/google-refine-2.1-r2136.zip',
     'linux' => 'http://google-refine.googlecode.com/files/google-refine-2.1-r2136.tar.gz',
+  },
+  
+  'vagrant' => {
+    'mac' => 'http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/Vagrant-1.3.5.dmg',
+    'win' => 'http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/Vagrant_1.3.5.msi',
+    'deb_i686' => 'http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/vagrant_1.3.5_i686.deb',
+    'deb_x86_64' => 'http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/vagrant_1.3.5_x86_64.deb',
+  },
+  'virtualbox' => {
+    'mac' => 'http://download.virtualbox.org/virtualbox/4.3.2/VirtualBox-4.3.2-90405-OSX.dmg',
+    'win' => 'http://download.virtualbox.org/virtualbox/4.3.2/VirtualBox-4.3.2-90405-Win.exe',
+    'deb_i386' => 'http://download.virtualbox.org/virtualbox/4.3.2/virtualbox-4.3_4.3.2-90405~Ubuntu~raring_i386.deb',
+    'deb_amd64' => 'http://download.virtualbox.org/virtualbox/4.3.2/virtualbox-4.3_4.3.2-90405~Ubuntu~raring_amd64.deb',
+  },
+  'xowa' => {
+    'mac' => 'http://sourceforge.net/projects/xowa/files/v0.11.0/xowa_app_macosx_v0.11.0.0.zip/download',
+    'win' => 'http://sourceforge.net/projects/xowa/files/v0.11.0/xowa_app_windows_v0.11.0.0.zip/download',
+    'linux' => 'http://sourceforge.net/projects/xowa/files/v0.11.0/xowa_app_linux_v0.11.0.0.zip/download',
+    'linux_64' => 'http://sourceforge.net/projects/xowa/files/v0.11.0/xowa_app_linux_64_v0.11.0.0.zip/download',
   },
 }

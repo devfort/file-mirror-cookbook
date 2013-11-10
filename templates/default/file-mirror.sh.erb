@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+<% node.file_mirror.files.each do |group, f| %>
+local_dir=<%= node.file_mirror.data_dir %>/<%= group %>
+mkdir -p $local_dir
+cd $local_dir
+  <% f.each do |f_alias, url| %>
+<%= node.file_mirror.command % { url: url } %>
+  <% end %>
+<% end %>

@@ -4,7 +4,12 @@
 local_dir=<%= node.file_mirror.data_dir %>/<%= group %>
 mkdir -p $local_dir
 cd $local_dir
-  <% f.each do |f_alias, url| %>
-<%= node.file_mirror.command % { url: url } %>
+  <% f.each do |f_alias, base_opts|
+  default_opts = Mash.from_hash({
+    args: nil,
+  })
+  opts = default_opts.merge(base_opts).symbolize_keys
+  %>
+<%= node.file_mirror.command % opts %>
   <% end %>
 <% end %>

@@ -232,5 +232,18 @@ default['file_mirror']['files'] = {
     'mac' => { url: 'https://download3.vmware.com/software/fusion/file/VMware-Fusion-6.0.2-1398658-light.dmg', },
     'linux' => { url: 'https://download3.vmware.com/software/player/file/VMware-Player-6.0.1-1379776.i386.bundle', },
     'linux_64' => { url: 'https://download3.vmware.com/software/player/file/VMware-Player-6.0.1-1379776.x86_64.bundle', }
+   },
+  'xcode' => {
+    'mac' => {
+      url: 'http://adcdownload.apple.com/Developer_Tools/xcode_5.0.2/xcode_5.0.2.dmg',
+      require: {
+        args: <<-REQUIRED_ARGS
+This is not provided because it requires the cookie for an Apple Developer Center account.
+
+The value must be set as follows:
+    --header='Cookie: ADCDownloadAuth=<adcdownloadauth-cookie-value>'
+REQUIRED_ARGS
+      },
+    },
   },
 }

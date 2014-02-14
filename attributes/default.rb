@@ -246,4 +246,16 @@ REQUIRED_ARGS
       },
     },
   },
+  'boxes' => {
+    'ubuntu-13.04-provisionerless-virtualbox'       => { url: 'http://devfort.s3.amazonaws.com/boxes/devfort-ubuntu-13.04-provisionerless-virtualbox.box', },
+    'ubuntu-13.04-provisionerless-120gb-virtualbox' => { url: 'http://devfort.s3.amazonaws.com/boxes/devfort-ubuntu-13.04-provisionerless-120gb-virtualbox.box', },
+    'ubuntu-13.04-provisionerless-vmware'           => { url: 'http://devfort.s3.amazonaws.com/boxes/devfort-ubuntu-13.04-provisionerless-vmware.box', },
+    'ubuntu-13.04-provisionerless-120gb-vmware'     => { url: 'http://devfort.s3.amazonaws.com/boxes/devfort-ubuntu-13.04-provisionerless-120gb-vmware.box', },
+  },
+  'chef' => {
+    '11.10.0-1_i386'   => { url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/i686/chef_11.10.0-1.ubuntu.13.04_i386.deb', },
+    '11.8.2-1_i386'    => { url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/i686/chef_11.8.2-1.ubuntu.13.04_i386.deb', },
+    '11.10.0-1_x86_64' => { url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.10.0-1.ubuntu.13.04_amd64.deb', },
+    '11.8.2-1_x86_64'  => { url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.8.2-1.ubuntu.13.04_amd64.deb', },
+  },
 }

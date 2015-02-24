@@ -16,14 +16,12 @@ default['file_mirror']['files'] = {
   },
   'apache-httpd' => {
     'source' => { url: 'http://apache.mirrors.timporter.net//httpd/httpd-2.4.7.tar.bz2', },
-    'win' => { url:
- 'http://mirrors.enquira.co.uk/apache//httpd/binaries/win32/httpd-2.2.19-win32-x86-openssl-0.9.8r.msi', },
-},
+    'win' => { url: 'http://mirrors.enquira.co.uk/apache//httpd/binaries/win32/httpd-2.2.19-win32-x86-openssl-0.9.8r.msi', },
   },
   'jquery' => {
     'uncompressed' => { url: 'http://code.jquery.com/jquery-1.11.0.js', },
     'minified' => { url: 'http://code.jquery.com/jquery-1.11.0.min.js', },
-    'map': => { url: 'http://code.jquery.com/jquery-1.11.0.min.map', },
+    'map' => { url: 'http://code.jquery.com/jquery-1.11.0.min.map', },
     'ui' => { url: 'http://jqueryui.com/resources/download/jquery-ui-1.10.4.zip', },
     '1.9-upgrade-guide' => { url: 'http://jquery.com/upgrade-guide/1.9/', },
   },
@@ -48,10 +46,10 @@ default['file_mirror']['files'] = {
     'wiki' => { url: 'http://oligarchy.co.uk/xapian/trac.xapian.org.tar.gz', },
   },
   'diveintopython' => {
-    'pdf' => 'http://diveintopython.net/download/diveintopython-pdf-5.4.zip',
+    'pdf' => { url: 'http://diveintopython.net/download/diveintopython-pdf-5.4.zip', },
   },
   'diveintopython3' => {
-    'pdf' => 'http://cloud.github.com/downloads/diveintomark/diveintopython3/dive-into-python3.pdf',
+    'pdf' => { url: 'http://cloud.github.com/downloads/diveintomark/diveintopython3/dive-into-python3.pdf', },
   },
   'adobe-flash-player' => {
     'win' => { url: 'http://fpdownload.adobe.com/get/flashplayer/current/install_flash_player_ax.exe', },

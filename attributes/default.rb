@@ -3,7 +3,7 @@ default['file_mirror']['data_dir'] = '/data/files'
 default['file_mirror']['apache']['listen_hostname'] = 'files.fort'
 default['file_mirror']['apache']['listen_port'] = '80'
 
-default['file_mirror']['command'] = 'wget -N --no-check-certificate %{args} %{url}'
+default['file_mirror']['command'] = 'wget -N --no-check-certificate %{args} "%{url}"'
 
 default['file_mirror']['files'] = {
   'linux-kernel' => {
@@ -163,9 +163,13 @@ REQUIRED_ARGS
     'ubuntu-13.04-provisionerless-120gb-vmware'     => { url: 'http://devfort.s3.amazonaws.com/boxes/devfort-ubuntu-13.04-provisionerless-120gb-vmware.box', },
   },
   'chef' => {
-    '11.10.0-1_i386'   => { url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/i686/chef_11.10.0-1.ubuntu.13.04_i386.deb', },
-    '11.8.2-1_i386'    => { url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/i686/chef_11.8.2-1.ubuntu.13.04_i386.deb', },
-    '11.10.0-1_x86_64' => { url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.10.0-1.ubuntu.13.04_amd64.deb', },
-    '11.8.2-1_x86_64'  => { url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.8.2-1.ubuntu.13.04_amd64.deb', },
+    'i386'   => {
+      url: 'http://www.chef.io/chef/download?p=ubuntu&pv=14.04&m=i686&v=latest&prerelease=false&nightlies=false',
+      args: '-O chef_latest_i686.deb'
+    },
+    'x86_64' => {
+      url: 'http://www.chef.io/chef/download?p=ubuntu&pv=14.04&m=x86_64&v=latest&prerelease=false&nightlies=false',
+      args: '-O chef_latest_x86_64.deb'
+    },
   },
 }
